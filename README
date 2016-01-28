@@ -1,0 +1,17 @@
+Slick - An operating system based off of an extensible micro-exokernel.
+
+Slick is an operating system kernel, as well as the name of the umbrella
+project comprising of the kernel, bootloader, and drivers. It is designed to
+be an exensible microkernel that limits the amount of abstraction required to
+write and run an application. The premise behind this idea is that software can
+still be written to take advantage of existing abstractions and frameworks,
+while still having the flexibility to access lower-level components to increase
+performance without sacrificing stability and safety.
+
+The umbrella project contains the following components:
+  - GLOSS ~ Generic Loader for Operating SystemS
+            This is an extensible bootloader that supports configuration files
+            per-OS, which reduces the need for the OS to support boot routines.
+  - SLICK ~ System Level Integrated Computer Kernel
+            This is the core microkernel which the operating system is built
+            upon.
